@@ -52,7 +52,7 @@
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="droidx" revision="13_r63"/>
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="droidx" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="droidx" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="droidx" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="droidx" revision="13_r63" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="droidx" />
   <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="droidx" />
   
