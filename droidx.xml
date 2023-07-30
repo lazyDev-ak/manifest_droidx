@@ -8,22 +8,21 @@
 
   <remote name="gms"
         fetch="https://gitlab.com/NRanjan-17"
-        revision="13" />
+        revision="tm-qpr3" />
   
 
   <!-- external repos -->
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
-  <project path="external/faceunlock" name="external_faceunlock" remote="droidx" />
 
   <!-- Framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="droidx" />
-  <project path="frameworks/base" name="frameworks_base" remote="droidx" revision="13" />
+  <project path="frameworks/av" name="frameworks_av" remote="droidx" revision="SE" />
+  <project path="frameworks/base" name="frameworks_base" remote="droidx" revision="SE" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="droidx" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="droidx" />
-  <project path="frameworks/native" name="frameworks_native" remote="droidx" revision="13" />
+  <project path="frameworks/native" name="frameworks_native" remote="droidx" revision="SE" />
   
   <!-- General repos -->
-  <project path="build/make" name="build" remote="droidx" revision="13">
+  <project path="build/make" name="build" remote="droidx" revision="SE">
      <copyfile src="core/root.mk" dest="Makefile" />
      <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
      <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -36,22 +35,19 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="art" name="art" groups="pdk" remote="droidx" />
+  <project path="art" name="art" groups="pdk" remote="droidx" revision="SE"/>
   <project path="bionic" name="bionic" groups="pdk" remote="droidx" />
   <project path="bootable/recovery" name="bootable_recovery" remote="droidx" />
 
   <!-- Packages repos -->
-  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="droidx" />
-  <project path="packages/apps/Customize" name="packages_apps_Customize" remote="droidx" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="droidx" />
+  <project path="packages/apps/Customize" name="packages_apps_Customize" remote="droidx" revision="SE"/>
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="droidx" revision="SE"/>
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="droidx" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="droidx"/>
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="droidx" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="droidx" />
-  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="droidx" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="droidx" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="droidx" revision="SE"/>
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="droidx" />
-  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="droidx" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="droidx" />
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="droidx" />
   
@@ -79,9 +75,8 @@
   <project path="system/qcom" name="system_qcom" remote="droidx" />
   
   <!-- Vendor repos -->
-  <project path="vendor/bcr" name="vendor_bcr" remote="droidx"/>
-  <project path="vendor/droidx" name="vendor_droidx" remote="droidx"/>
-  <project path="vendor/gms" name="vendor_gms" remote="gms" />
+  <project path="vendor/droidx" name="vendor_droidx" remote="droidx" revision="SE"/>
+  <project path="vendor/gms" name="android_vendor_gms" remote="gms" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="droidx" />
   <project path="vendor/support" name="vendor_support" remote="droidx" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="droidx" />
