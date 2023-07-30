@@ -57,6 +57,8 @@
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="droidx" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="droidx" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="droidx" />
+  <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="droidx" />
+  
   <!-- Device repos -->
   <project path="device/droidx/sepolicy" name="device_droidx_sepolicy" remote="droidx" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="droidx" />
@@ -87,4 +89,5 @@
   <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="droidx" />
   <project path="vendor/support" name="vendor_support" remote="droidx" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="droidx" />
+  <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="droidx" />
 </manifest>
